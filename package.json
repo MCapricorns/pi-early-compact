@@ -1,0 +1,41 @@
+{
+  "name": "pi-early-compact",
+  "version": "0.1.0",
+  "description": "Pi extension that auto-compacts large-context models (1M-class) at a 400k effective limit before quality degrades",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test index.test.ts"
+  },
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "compaction",
+    "context-window"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCapricorns/pi-early-compact.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MCapricorns/pi-early-compact/issues"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.4",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
